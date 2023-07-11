@@ -29,12 +29,17 @@ window.onload = function() {
   let aleatorioAction = arregloAleatorio(action);
   let aleatorioWhat = arregloAleatorio(what);
   let aleatorioWhen = arregloAleatorio(when);
-  console.log(
-    arregloAleatorio([
-      aleatorioWho,
-      +"" + aleatorioAction,
-      +"" + aleatorioWhat,
-      +"" + aleatorioWhen
-    ])
-  );
+
+  let excuse =
+    aleatorioWho +
+    " " +
+    aleatorioAction +
+    " " +
+    aleatorioWhat +
+    " " +
+    aleatorioWhen;
+
+  console.log(excuse);
+  let element = document.getElementById("excuse");
+  element.innerHTML = excuse;
 };
